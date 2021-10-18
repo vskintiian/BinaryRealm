@@ -3,30 +3,22 @@
 
 import PackageDescription
 
-let realmVersion = "10.16.0"
+let realmVersion = "10.17.0"
 
 func buildTargets() -> [Target] {
-    let baseURL = "https://github.com/bioche/RealmBinaries/releases/download/\(realmVersion)"
-    
-    #if swift(>=5.5)
-    let xcodeVersion = "13"
-    let realmChecksum = "3904b4386ad260fab4e43d77c140458cce01e441e1f67cf28c3219df73634063"
-    let realmSwiftChecksum = "1583230dd3d63fae97d7652b82e2c26338316932dee46fdd86a44f48ea4feb60"
-    #else
-    let xcodeVersion = "12_5_1"
-    let realmChecksum = "b03c7517b6feff077bf7c2feae14663ff83a97d1c90893061599bac7c2adc072"
-    let realmSwiftChecksum = "f79afb456e0bc23f5fe1dcda6268f998f81376e994a4a163445d327be5796dea"
-    #endif
+    let baseURL = "https://github.com/vskintiian/RealmBinaries/releases/download/\(realmVersion)"
+    let realmChecksum = "e1f342744bbb7c7b9a26945d8422126a085acfa2320dbc678cf45573848e126c"
+    let realmSwiftChecksum = "0535008da1cef07ec16f19cd5ed00a1702dd0cf3596ac0ab476fac772f8c8635"
     
     return [
         .binaryTarget(
             name: "Realm",
-            url: "\(baseURL)/Realm_\(xcodeVersion).xcframework.zip",
+            url: "\(baseURL)/Realm.xcframework.zip",
             checksum: realmChecksum
         ),
         .binaryTarget(
             name: "RealmSwift",
-            url: "\(baseURL)/RealmSwift_\(xcodeVersion).xcframework.zip",
+            url: "\(baseURL)/RealmSwift.xcframework.zip",
             checksum: realmSwiftChecksum
         )
     ]
