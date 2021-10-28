@@ -1,2 +1,2 @@
-# RealmBinaries
+# BinaryRealm
 Vends Realm xcframeworks via SPM to save build time
