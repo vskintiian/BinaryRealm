@@ -6,7 +6,7 @@ import PackageDescription
 let realmVersion = "10.17.0"
 
 func buildTargets() -> [Target] {
-    let baseURL = "https://github.com/vskintiian/RealmBinaries/releases/download/\(realmVersion)"
+    let baseURL = "https://github.com/vskintiian/BinaryRealm/releases/download/\(realmVersion)"
     let realmChecksum = "e1f342744bbb7c7b9a26945d8422126a085acfa2320dbc678cf45573848e126c"
     let realmSwiftChecksum = "0535008da1cef07ec16f19cd5ed00a1702dd0cf3596ac0ab476fac772f8c8635"
     
