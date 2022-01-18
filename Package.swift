@@ -3,12 +3,12 @@
 
 import PackageDescription
 
-let realmVersion = "10.20.0"
+let realmVersion = "10.21.1"
 
 func buildTargets() -> [Target] {
     let baseURL = "https://github.com/vskintiian/BinaryRealm/releases/download/\(realmVersion)"
-    let realmChecksum = "85e3bc2e861c490e9c939078bd27bb39cf9c1dbf78d8466bfdbbbf3726a91392"
-    let realmSwiftChecksum = "6fb17f45cc5f29928fee069b715e5d0d691a35555b91f8d00f8ee88578f19daa"
+    let realmChecksum = "7d04cbeec6ae3e739ab0a68ce97dd29511733612a40b15990acaae5dba6a6b63"
+    let realmSwiftChecksum = "4bb54207b7f62ed5f041b06963c72d59c75ff57fed3100a87123766927659bf7"
     
     return [
         .binaryTarget(
