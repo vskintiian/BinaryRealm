@@ -7,8 +7,8 @@ let realmVersion = "10.30.0"
 
 func buildTargets() -> [Target] {
     let baseURL = "https://github.com/vskintiian/BinaryRealm/releases/download/\(realmVersion)"
-    let realmChecksum = "1d880955e0e5bb76b3cb1edbad23f1d57af8f6d3aa215a45eb2c5e7f83855bb4"
-    let realmSwiftChecksum = "6a93676d2378bcf2a8fc7d00931dc771d002e4af61bc9f91e3382a8a80a6ef98"
+    let realmChecksum = "4f509a0a12b5b1eab0b99d07b68744379ad8b43a26354de3160611f483918b22"
+    let realmSwiftChecksum = "cbcc5c1f6cada95e21c8bd0920beb3b5d244ff4365ab2c1bf8f1c6478eb9c2e9"
     
     return [
         .binaryTarget(
