@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let realmVersion = "10.30.0"
+let realmVersion = "10.36.2"
 
 func buildTargets() -> [Target] {
     let baseURL = "https://github.com/vskintiian/BinaryRealm/releases/download/\(realmVersion)"
